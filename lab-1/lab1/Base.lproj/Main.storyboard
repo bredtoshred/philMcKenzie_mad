@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,18 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Film Photos of Rocks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shM-3z-1Jz">
-                                <rect key="frame" x="103" y="34" width="208.33333333333331" height="20.333333333333336"/>
+                                <rect key="frame" x="101.33333333333334" y="34" width="211.66666666666666" height="20.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="shM-3z-1Jz" secondAttribute="height" multiplier="52:5" id="4rz-Ot-6eQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-IB-agi">
-                                <rect key="frame" x="-565" y="111" width="1544" height="174"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="174" id="aTz-U5-sDh"/>
-                                    <constraint firstAttribute="width" constant="1544" id="egr-Qn-P0j"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="LM5-eY-qsq">
                                 <rect key="frame" x="55.666666666666657" y="73.333333333333329" width="303" height="30"/>
                                 <subviews>
@@ -53,25 +50,45 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="KlF-P7-yJA" firstAttribute="leading" secondItem="Op6-oa-sXn" secondAttribute="trailing" constant="160" id="PAl-Oa-K9b"/>
+                                    <constraint firstItem="KlF-P7-yJA" firstAttribute="leading" secondItem="Op6-oa-sXn" secondAttribute="trailing" constant="160" id="xab-JJ-wc7"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Loveland Pass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgx-W4-xYf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loveland Pass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgx-W4-xYf">
                                 <rect key="frame" x="152.66666666666669" y="293" width="109.00000000000006" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-IB-agi">
+                                <rect key="frame" x="-565" y="111" width="1544" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="aTz-U5-sDh"/>
+                                    <constraint firstAttribute="width" constant="1544" id="egr-Qn-P0j"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LM5-eY-qsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0FE-vX-gsw"/>
+                            <constraint firstItem="shM-3z-1Jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="09p-Ba-QVL"/>
+                            <constraint firstItem="shM-3z-1Jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="22Y-e8-Ul7"/>
+                            <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3PZ-Mu-Bkw"/>
                             <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aph-T6-P0s"/>
+                            <constraint firstItem="LM5-eY-qsq" firstAttribute="top" secondItem="shM-3z-1Jz" secondAttribute="bottom" constant="19" id="DaM-n7-ZRc"/>
+                            <constraint firstItem="zgx-W4-xYf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E8V-TE-Mal"/>
                             <constraint firstItem="zgx-W4-xYf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="El6-1R-mBa"/>
                             <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGE-na-ooE"/>
+                            <constraint firstItem="shM-3z-1Jz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GF5-aE-BPM"/>
+                            <constraint firstItem="LM5-eY-qsq" firstAttribute="top" secondItem="shM-3z-1Jz" secondAttribute="bottom" constant="19" id="KDc-gB-oIM"/>
                             <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L0n-MP-EOF"/>
+                            <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3c-fB-Wi3"/>
                             <constraint firstItem="shM-3z-1Jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="VH2-CX-ve7"/>
                             <constraint firstItem="shM-3z-1Jz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VKq-cc-lBd"/>
-                            <constraint firstItem="LM5-eY-qsq" firstAttribute="top" secondItem="shM-3z-1Jz" secondAttribute="bottom" constant="18.670000000000002" id="lvv-Gu-Lqv"/>
-                            <constraint firstItem="LM5-eY-qsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p1t-wN-ZG2"/>
+                            <constraint firstItem="zgx-W4-xYf" firstAttribute="top" secondItem="mRt-IB-agi" secondAttribute="bottom" constant="8" id="WEz-gW-l7y"/>
+                            <constraint firstItem="mRt-IB-agi" firstAttribute="top" secondItem="LM5-eY-qsq" secondAttribute="bottom" constant="7.6699999999999999" id="ao7-62-JmI"/>
+                            <constraint firstItem="mRt-IB-agi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dBu-o3-sla"/>
+                            <constraint firstItem="LM5-eY-qsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dzL-8l-f3v"/>
                         </constraints>
                     </view>
                     <connections>
