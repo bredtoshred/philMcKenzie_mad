@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nwf-kC-9M5">
-                                <rect key="frame" x="180" y="554" width="118" height="31"/>
+                                <rect key="frame" x="180" y="554" width="174" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-P0-qTc">
@@ -62,7 +62,7 @@
                                     <segment title="Foot Off"/>
                                 </segments>
                                 <connections>
-                                    <action selector="imageControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="dxh-bl-FVz"/>
+                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="xav-H8-jfb"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -70,11 +70,9 @@
                     </view>
                     <connections>
                         <outlet property="UIView" destination="6fC-yP-e5v" id="2kP-va-JDc"/>
-                        <outlet property="fontColorSwitch" destination="cp0-P0-qTc" id="bzR-Sg-oqE"/>
                         <outlet property="fontSizeSlider" destination="Nwf-kC-9M5" id="pp0-gm-XuB"/>
-                        <outlet property="imageControl" destination="bGV-yM-nDu" id="4TG-zk-Qkx"/>
+                        <outlet property="imageControl" destination="bGV-yM-nDu" id="qBB-Go-VSz"/>
                         <outlet property="imageLocation" destination="Dzg-0O-hPL" id="LcY-zE-lcl"/>
-                        <outlet property="imageSelector" destination="bGV-yM-nDu" id="nTP-eN-YgW"/>
                         <outlet property="imageTitle" destination="6fC-yP-e5v" id="iKX-MH-0TL"/>
                     </connections>
                 </viewController>

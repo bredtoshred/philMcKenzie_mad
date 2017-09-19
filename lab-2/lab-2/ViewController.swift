@@ -12,13 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageLocation: UIImageView!
     @IBOutlet weak var imageTitle: UILabel!
-    @IBOutlet weak var imageSelector: UISegmentedControl!
     @IBOutlet weak var fontColorSwitch: UISwitch!
     @IBOutlet weak var fontSizeSlider: UISlider!
     
-
-    @IBAction func imageControl(_ sender: UISegmentedControl) {
+    @IBOutlet weak var imageControl: UISegmentedControl!
+    @IBAction func changeInfo(_ sender: UISegmentedControl) {
+        if imageControl.selectedSegmentIndex==0 {
+            imageTitle.text="Young Beatles"
+            imageLocation.image=UIImage(named: "footOn")
+        }
+        else if imageControl.selectedSegmentIndex==1 {
+            imageTitle.text="Not so young Beatles"
+            imageLocation.image=UIImage(named: "footOff")
+        }
+        
     }
+
+
     
     
     override func viewDidLoad() {
