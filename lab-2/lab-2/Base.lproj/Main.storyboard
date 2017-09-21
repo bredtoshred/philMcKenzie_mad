@@ -41,8 +41,8 @@
                                     <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="DZW-jg-R2o"/>
                                 </connections>
                             </segmentedControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-bW-JEz">
-                                <rect key="frame" x="131" y="543" width="152.66666666666669" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7J1-bW-JEz">
+                                <rect key="frame" x="126" y="543" width="162.66666666666669" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalization" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-xG-H8S">
                                         <rect key="frame" x="0.0" y="0.0" width="103.66666666666666" height="31"/>
@@ -51,7 +51,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-hz-9za">
-                                        <rect key="frame" x="103.66666666666667" y="0.0" width="51.000000000000014" height="31"/>
+                                        <rect key="frame" x="113.66666666666667" y="0.0" width="51.000000000000014" height="31"/>
                                         <connections>
                                             <action selector="updateFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="agH-uN-W0C"/>
                                         </connections>
@@ -114,8 +114,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3E-EI-neE">
-                                <rect key="frame" x="123" y="623" width="168" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O3E-EI-neE">
+                                <rect key="frame" x="118" y="623" width="178" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8x-jw-wiA">
                                         <rect key="frame" x="0.0" y="0.0" width="18" height="20"/>
@@ -124,7 +124,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="zvT-LV-sRF">
-                                        <rect key="frame" x="16" y="0.0" width="154" height="21"/>
+                                        <rect key="frame" x="26" y="0.0" width="154" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="qe9-Zz-IXI"/>
                                         </constraints>
