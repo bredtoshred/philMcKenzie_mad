@@ -50,47 +50,60 @@ class ViewController: UIViewController {
         }
     }
     
+    func resetCPUImg(){
+        cpuChoiceImage.image=UIImage(named: "question")
+    }
+    
     func winner(u : Int, c : Int){
         let user :Int = u
         let cpu :Int = c
+        var message : String = ""
         
         if user == 1 && cpu == 2 {
-            print("you lose, paper covers rock")
+            message = "you lose, paper covers rock"
             cpuScore += 1
         }
             
         else if user == 1 && cpu == 3 {
-            print("you win, rock breaks scissors")
+            message = "you win, rock breaks scissors"
             userScore += 1
         }
             
         else if user == 2 && cpu == 1 {
-            print("you win, paper covers rock")
+            message = "you win, paper covers rock"
             cpuScore += 1
         }
             
         else if user == 2 && cpu == 3 {
-            print("you lose, scissors cut paper")
+            message = "you lose, scissors cut paper"
             cpuScore += 1
         }
             
         else if user == 3 && cpu == 1 {
-            print("you lose, rock breaks scissors")
+            message = "you lose, rock breaks scissors"
             cpuScore += 1
         }
             
         else if user == 3 && cpu == 2 {
-            print("you win, scissors cut paper")
+            message = "you win, scissors cut paper"
             userScore += 1
         }
             
         else{
-            print("you tied!")
+            message = "you tied!"
         }
         
         print("cpu score = \(cpuScore)")
         print("user score = \(userScore)")
         
+        
+        let when = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Plat Again", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+//            self.resetCPUImg()
+        }
     }
    
 override func didReceiveMemoryWarning() {
