@@ -17,22 +17,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var totalDuePerPerson: UILabel!
     var pct:Float = 0.0 //tip percentage
     
-    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+    @IBAction func changeSegment(_ sender: Any) {
         switch tipPercent.selectedSegmentIndex
         {
         case 0:
-            pct = 0.1
+            pct = 0.10
             updateTipTotals()
         case 1:
             pct = 0.15
             updateTipTotals()
         case 2:
-            pct = 0.2
+            pct = 0.20
             updateTipTotals()
         default:
             pct = 0
             updateTipTotals()
         }
+    }
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
