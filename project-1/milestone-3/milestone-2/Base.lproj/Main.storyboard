@@ -134,6 +134,11 @@
                     </view>
                     <connections>
                         <outlet property="cpuChoiceImage" destination="G8z-JE-97c" id="hX8-vW-LEz"/>
+                        <outlet property="cpuScoreLabel" destination="2eD-a3-CKX" id="8d4-oi-nz5"/>
+                        <outlet property="paperImage" destination="xYf-fM-FaD" id="zXR-ua-GSL"/>
+                        <outlet property="rockImage" destination="AiR-Fc-zIw" id="uDl-kE-Evd"/>
+                        <outlet property="scissorsImage" destination="OlA-wf-X4I" id="YFe-76-p4Y"/>
+                        <outlet property="userScoreLabel" destination="VC5-62-dzp" id="xlR-UM-Npy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
