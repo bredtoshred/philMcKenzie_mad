@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     func setUserImage(userImg : Int){
         let userImgFunc: Int = userImg
         if userImgFunc == 1 {
-                        UIView.transition(with: self.rockImage,
+            UIView.transition(with: self.rockImage,
                               duration:0.5,
                               options: .transitionCrossDissolve,
                               animations: { self.paperImage.setImage(UIImage(named:"paperDark")!, for: UIControlState.normal) ; self.scissorsImage.setImage(UIImage(named:"scissorsDark")!, for: UIControlState.normal)  },
@@ -70,27 +70,24 @@ class ViewController: UIViewController {
     func setCPUImg(cpuImg : Int){
         let cpuImgFunc: Int = cpuImg
         if cpuImgFunc == 1 {
-//            cpuChoiceImage.image=UIImage(named: "rock")
             UIView.transition(with: self.cpuChoiceImage,
-                              duration:1.0,
+                              duration:0.5,
                               options: .transitionCrossDissolve,
-                              animations: { self.cpuChoiceImage.image = UIImage(named: "rock"); self.playSound() },
+                              animations: { self.cpuChoiceImage.image = UIImage(named: "rock")},
                               completion: nil)
         }
         else if cpuImgFunc == 2 {
-//            cpuChoiceImage.image=UIImage(named: "paper")
             UIView.transition(with: self.cpuChoiceImage,
-                              duration:1.0,
+                              duration:0.5,
                               options: .transitionCrossDissolve,
-                              animations: { self.cpuChoiceImage.image = UIImage(named: "paper"); self.playSound() },
+                              animations: { self.cpuChoiceImage.image = UIImage(named: "paper")},
                               completion: nil)
         }
         else if cpuImgFunc == 3 {
-//            cpuChoiceImage.image=UIImage(named: "scissors")
             UIView.transition(with: self.cpuChoiceImage,
-                              duration:1.0,
+                              duration:0.5,
                               options: .transitionCrossDissolve,
-                              animations: { self.cpuChoiceImage.image = UIImage(named: "scissors"); self.playSound() },
+                              animations: { self.cpuChoiceImage.image = UIImage(named: "scissors")},
                               completion: nil)
         }
     }
@@ -150,15 +147,12 @@ class ViewController: UIViewController {
             
         else{
             message = "you tied!"
+            whichSound = ""
         }
+        playSound()
         updateScores(userScoreFunc: userScore, cpuScoreFunc: cpuScore)
         
-        print("cpu score = \(cpuScore)")
-        print("user score = \(userScore)")
-        
-        
-        
-        let when = DispatchTime.now() + 1.5
+        let when = DispatchTime.now() + 1.0
         DispatchQueue.main.asyncAfter(deadline: when) {
             let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Play Again", style: UIAlertActionStyle.default, handler: { action in
