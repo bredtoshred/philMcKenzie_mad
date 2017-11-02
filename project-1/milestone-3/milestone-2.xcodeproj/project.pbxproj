@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20445BEB1FA8E78B00DFD5F4 /* paperWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20445BEA1FA8E78B00DFD5F4 /* paperWin.mp3 */; };
+		20445BEE1FA8E79B00DFD5F4 /* rockWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20445BEC1FA8E79B00DFD5F4 /* rockWin.mp3 */; };
+		20445BEF1FA8E79B00DFD5F4 /* scissorsWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20445BED1FA8E79B00DFD5F4 /* scissorsWin.mp3 */; };
 		20B8D7AE1F84055200450180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8D7AD1F84055200450180 /* AppDelegate.swift */; };
 		20B8D7B01F84055200450180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8D7AF1F84055200450180 /* ViewController.swift */; };
 		20B8D7B31F84055200450180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D7B11F84055200450180 /* Main.storyboard */; };
 		20B8D7B51F84055200450180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D7B41F84055200450180 /* Assets.xcassets */; };
 		20B8D7B81F84055200450180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B8D7B61F84055200450180 /* LaunchScreen.storyboard */; };
-		20F29F281F8FEA2A001BE1AA /* paperWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20F29F251F8FEA2A001BE1AA /* paperWin.mp3 */; };
-		20F29F291F8FEA2A001BE1AA /* rockWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20F29F261F8FEA2A001BE1AA /* rockWin.mp3 */; };
-		20F29F2A1F8FEA2A001BE1AA /* scissorsWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20F29F271F8FEA2A001BE1AA /* scissorsWin.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20445BEA1FA8E78B00DFD5F4 /* paperWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = paperWin.mp3; sourceTree = SOURCE_ROOT; };
+		20445BEC1FA8E79B00DFD5F4 /* rockWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rockWin.mp3; sourceTree = SOURCE_ROOT; };
+		20445BED1FA8E79B00DFD5F4 /* scissorsWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scissorsWin.mp3; sourceTree = SOURCE_ROOT; };
 		20B8D7AA1F84055200450180 /* milestone-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "milestone-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B8D7AD1F84055200450180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B8D7AF1F84055200450180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +28,6 @@
 		20B8D7B41F84055200450180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B8D7B71F84055200450180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B8D7B91F84055200450180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F29F251F8FEA2A001BE1AA /* paperWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paperWin.mp3; path = ../../../../../Downloads/paperWin.mp3; sourceTree = "<group>"; };
-		20F29F261F8FEA2A001BE1AA /* rockWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rockWin.mp3; path = "/Users/philmckenzie/Desktop/philMcKenzie_mad/project-1/milestone-3/../../../../Downloads/rockWin.mp3"; sourceTree = "<absolute>"; };
-		20F29F271F8FEA2A001BE1AA /* scissorsWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = scissorsWin.mp3; path = ../../../../../Downloads/scissorsWin.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 		20F29F241F8FE7D1001BE1AA /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				20F29F251F8FEA2A001BE1AA /* paperWin.mp3 */,
-				20F29F261F8FEA2A001BE1AA /* rockWin.mp3 */,
-				20F29F271F8FEA2A001BE1AA /* scissorsWin.mp3 */,
+				20445BEC1FA8E79B00DFD5F4 /* rockWin.mp3 */,
+				20445BED1FA8E79B00DFD5F4 /* scissorsWin.mp3 */,
+				20445BEA1FA8E78B00DFD5F4 /* paperWin.mp3 */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -140,12 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20445BEF1FA8E79B00DFD5F4 /* scissorsWin.mp3 in Resources */,
+				20445BEB1FA8E78B00DFD5F4 /* paperWin.mp3 in Resources */,
 				20B8D7B81F84055200450180 /* LaunchScreen.storyboard in Resources */,
-				20F29F281F8FEA2A001BE1AA /* paperWin.mp3 in Resources */,
-				20F29F291F8FEA2A001BE1AA /* rockWin.mp3 in Resources */,
 				20B8D7B51F84055200450180 /* Assets.xcassets in Resources */,
-				20F29F2A1F8FEA2A001BE1AA /* scissorsWin.mp3 in Resources */,
 				20B8D7B31F84055200450180 /* Main.storyboard in Resources */,
+				20445BEE1FA8E79B00DFD5F4 /* rockWin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
