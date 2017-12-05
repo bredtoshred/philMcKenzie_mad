@@ -13,6 +13,8 @@ public class RecieveRideActivity extends AppCompatActivity {
 
     private String ride;
     private String rideURL;
+    private String rideDescription;
+//    private String rideImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +25,17 @@ public class RecieveRideActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ride = intent.getStringExtra("rideName");
         rideURL = intent.getStringExtra("rideURL");
+        rideDescription = intent.getStringExtra("rideDescription");
         Log.i("ride received", ride);
         Log.i("url received", rideURL);
+        Log.i("url received", rideDescription);
 
         //update text view
         TextView messageView = (TextView) findViewById(R.id.rideTextView);
         messageView.setText("You should check out " + ride);
+
+        TextView descriptionView = (TextView) findViewById(R.id.description);
+        descriptionView.setText(rideDescription);
 
         //get image button
         final ImageButton imageButton = (ImageButton) findViewById(R.id.webButton);

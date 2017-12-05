@@ -39,8 +39,10 @@ public class FindSkateparkActivity extends AppCompatActivity {
         String suggestedRide = myRide.getRide();
         //get URL of suggested ride
         String suggestedRideURL = myRide.getRideURL();
+        String suggestedRideDescription = myRide.getRideDescription();
         Log.i("shop", suggestedRide);
         Log.i("url", suggestedRideURL);
+        Log.i("description", suggestedRideDescription);
 
         //create an Intent
         Intent intent = new Intent(this, RecieveRideActivity.class);
@@ -48,6 +50,7 @@ public class FindSkateparkActivity extends AppCompatActivity {
         //pass data
         intent.putExtra("rideName", suggestedRide);
         intent.putExtra("rideURL", suggestedRideURL);
+        intent.putExtra("rideDescription", suggestedRideDescription);
 
         //start intent
         startActivity(intent);
