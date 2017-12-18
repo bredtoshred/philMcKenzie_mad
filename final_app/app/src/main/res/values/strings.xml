@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">final_app</string>
+    <string name="app_name">burrito</string>
+    <string name="title">Burrito Builder</string>
+    <string name="veggie">veggie</string>
+    <string name="meat">meat</string>
+    <string name="burrito">burrito</string>
+    <string name="taco">taco</string>
+    <string name="salsa">salsa</string>
+    <string name="sour_cream">sour cream</string>
+    <string name="cheese">cheese</string>
+    <string name="guacamole">guacamole</string>
+    <string name="button">Build</string>
+    <string name="gf">gluten free</string>
+    <string name="name">your name</string>
+    <string-array name="locations">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
 </resources>
